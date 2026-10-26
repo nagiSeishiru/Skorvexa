@@ -1,0 +1,5 @@
+# Netlify: this repo is the static site itself (no build step).
+# Folder pages (privacy/index.html) are served at /privacy/ automatically.
+[build]
+  publish = "."
+  command = ""
