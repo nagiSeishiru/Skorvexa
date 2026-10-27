@@ -32,4 +32,4 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
-Montserrat is bundled under the SIL Open Font License (`assets/fonts/OFL.txt`).
+Inter, the same typeface as the app, is bundled under the SIL Open Font License (`assets/fonts/OFL.txt`).
