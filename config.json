@@ -1,0 +1,21 @@
+{
+  "ads": {
+    "enabled": false,
+    "interstitialId": "",
+    "appOpenId": "",
+    "appOpenOnStart": true,
+    "appOpenOnResume": false,
+    "resumeAfterSeconds": 120,
+    "tabSwitchFrequency": 4,
+    "matchOpenFrequency": 3,
+    "minSecondsBetweenAds": 90,
+    "graceLaunches": 1
+  },
+  "rating": {
+    "enabled": true,
+    "onStart": true,
+    "minLaunches": 2,
+    "tabSwitchFrequency": 0,
+    "afterCorrectPrediction": true
+  }
+}

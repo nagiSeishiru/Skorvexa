@@ -7,3 +7,10 @@
 
 /assets/*
   Cache-Control: public, max-age=604800
+
+/config.json
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/json; charset=utf-8
+
+/app-ads.txt
+  Content-Type: text/plain; charset=utf-8

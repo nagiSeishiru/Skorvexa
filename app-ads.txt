@@ -1,0 +1,4 @@
+# Authorised sellers of Skorvexa's ad inventory (IAB app-ads.txt).
+# Replace pub-XXXXXXXXXXXXXXXX with your AdMob publisher ID
+# (AdMob → Settings → Account information → Publisher ID).
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
