@@ -32,4 +32,4 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
-Inter, the same typeface as the app, is bundled under the SIL Open Font License (`assets/fonts/OFL.txt`).
+Text uses the system font (San Francisco on iPhone and Mac), the same as the app. No font files are bundled.

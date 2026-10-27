@@ -1,13 +1,8 @@
 /* Skorvexa – website styles.
    Same palette and type as the app (lib/config/theme.dart → Palette.dark,
    AppText): stadium ink, cobalt for data, signal orange for live, lime for
-   selection. Set in Inter, like the app. */
+   selection. Uses the system font (San Francisco on Apple devices), like the app. */
 
-@font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/inter-400.woff") format("woff"); }
-@font-face { font-family: "Inter"; font-weight: 500; font-display: swap; src: url("fonts/inter-500.woff") format("woff"); }
-@font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("fonts/inter-600.woff") format("woff"); }
-@font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter-700.woff") format("woff"); }
-@font-face { font-family: "Inter"; font-weight: 800; font-display: swap; src: url("fonts/inter-800.woff") format("woff"); }
 
 :root {
   color-scheme: dark;
@@ -35,8 +30,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 500 16px/1.6 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-feature-settings: "cv11", "calt";
+  font: 500 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
