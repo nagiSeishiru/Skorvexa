@@ -246,3 +246,37 @@ footer nav a:hover { color: var(--text); }
   :root { --bg: #fff; --surface: #fff; --text: #111; --text-2: #333; --border: #ccc; }
   .topbar, .actions, .skip, .phone { display: none; }
 }
+
+/* ── Home: competitions, privacy promise, closing call to action ─────── */
+.comp-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 40px; margin-top: 24px; }
+.comp-group h3 { margin: 0 0 4px; color: var(--text-2); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.comp-group .leagues { margin-top: 10px; }
+.promise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-left: 1px solid var(--border); }
+.promise > div { padding: 22px 22px 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.promise h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; }
+.promise p { margin: 0; color: var(--text-2); font-size: 14.5px; line-height: 1.55; }
+.more { margin: 14px 0 0; font-size: 14.5px; }
+.cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-top: 72px; padding: 32px; background: var(--cobalt); border-radius: var(--radius); }
+.cta h2 { margin: 0; font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -.03em; color: #fff; }
+.cta p { margin: 4px 0 0; color: rgba(255,255,255,.82); }
+
+/* Legal pages: contents list and contact card */
+.toc { margin: 28px 0 0; padding: 18px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.toc h2 { margin: 0 0 10px; color: var(--text-2); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; font-size: 14.5px; line-height: 1.9; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--cobalt); }
+.doc { scroll-margin-top: 90px; }
+.doc h2 .n { color: var(--live); font-variant-numeric: tabular-nums; margin-right: 8px; }
+.contact-card { margin-top: 36px; padding: 22px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.contact-card h2 { margin: 0 0 6px; font-size: 17px; font-weight: 700; }
+.contact-card p { margin: 0; color: var(--text-2); font-size: 15px; }
+.steps { margin: 0; padding-left: 20px; color: var(--text-2); font-size: 15px; line-height: 1.7; }
+footer .fine { margin-top: 8px; color: var(--text-3); font-size: 12.5px; }
+footer .fine a { color: var(--text-3); }
+
+@media (max-width: 760px) {
+  .comp-groups, .promise { grid-template-columns: 1fr; }
+  .toc ol { columns: 1; }
+  .cta { padding: 24px; }
+}

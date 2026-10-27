@@ -1,28 +1,21 @@
 # Skorvexa – Canli Skor · website
 
-Static website for the Skorvexa iPhone app (App Store id `6826925784`): home, privacy policy, terms and support, in the app's dark theme. Plain HTML and CSS: no build step, no dependencies, no tracking.
+Website for the Skorvexa iPhone and iPad app (App Store id `6826925784`), live at **https://skorvexa.vercel.app**.
 
-| Page | Path |
+| Page | URL |
 | --- | --- |
-| Home | `/` |
-| Privacy Policy | `/privacy/` |
-| Terms & Conditions | `/terms/` |
-| Support | `/support/` |
-| Not found | `404.html` |
+| Home | https://skorvexa.vercel.app/ |
+| Support | https://skorvexa.vercel.app/support/ |
+| Privacy Policy | https://skorvexa.vercel.app/privacy/ |
+| Terms & Conditions | https://skorvexa.vercel.app/terms/ |
 
-## Deploy
+Support e-mail: support@koraplus.anonaddy.com
 
-Pick one. Each serves this repository's root as-is.
+## Updating
 
-- **Vercel**: import the repo, framework preset *Other*, leave build command and output directory empty. `vercel.json` adds trailing-slash redirects and security headers.
-- **Netlify**: import the repo; `netlify.toml` publishes the root with no build. `_headers` sets security and cache headers. Netlify Drop also works (drag this folder).
-- **GitHub Pages**: Settings → Pages → *Deploy from a branch* → `main` / `(root)`. `.nojekyll` turns off Jekyll. All links are relative, so it also works at `https://<user>.github.io/<repo>/`.
+Edit the HTML files directly and push to `main`; Vercel redeploys automatically. When the privacy policy or terms change, update the "Last updated" date at the top of that page.
 
-## After deploying
-
-1. Replace the placeholder support e-mail in `support/index.html` (marked `TODO(release)`).
-2. Give the app the live address: `AppLinks.site` in the app's `lib/config/links.dart`, or `--dart-define=SITE_URL=https://your-domain` when building.
-3. In App Store Connect use `https://your-domain/privacy/` as the Privacy Policy URL and `https://your-domain/support/` as the Support URL.
+`vercel.json` (Vercel), `netlify.toml` and `_headers` (Netlify) and `.nojekyll` (GitHub Pages) let the same files be hosted on any of the three without changes.
 
 ## Preview locally
 
@@ -31,5 +24,3 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>.
-
-Text uses the system font (San Francisco on iPhone and Mac), the same as the app. No font files are bundled.
